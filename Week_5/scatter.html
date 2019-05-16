@@ -1,0 +1,49 @@
+<!--
+Floris van Lith
+10793917
+Scatterplot
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Scatterplot</title>
+        <script type="text/javascript" src="d3/d3.js"></script>
+        <link rel = "stylesheet" type = "text/css" href = "Scatterfile.css" />
+    </head>
+    <body>
+      <h2>
+        Scatterplot
+      </h2>
+      <h3>
+        Create a scatterplot from the following data: GDP, Pregnancy in teens, Child crime areas
+      </h3>
+      <h4>
+        Floris van Lith, 10793917
+      </h4>
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script type="text/javascript">
+      function getSelectedValue(){
+        var selectedValue = document.getElementById("selectData").value
+      }
+      </script>
+      <script src="scatter.js"></script>
+      <form>
+         X:
+          <select id="data1">
+              <option value="GDP.json">GDP</option>
+              <option value="teenpregnancy.json">Pregnancy in teens</option>
+              <option value="teensarea.json">Child crime areas</option>
+          </select>
+          Y:
+          <select id="data2">
+              <option value="GDP.json">GDP</option>
+              <option value="teenpregnancy.json">Pregnancy in teens</option>
+              <option value="teensarea.json">Child crime areas</option>
+          </select>
+          <input type="button" value="Show graph" onclick= "selection()">
+      </form>
+
+    </body>
+</html>
